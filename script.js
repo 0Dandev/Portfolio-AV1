@@ -1,6 +1,6 @@
 (function() {
     emailjs.init({
-        publicKey: "YOUR_PUBLIC_KEY",
+        publicKey: "kRRRD3ksD3v_DDae6",
     });
 })();
 
@@ -26,7 +26,7 @@ form.addEventListener('submit', function(event) {
         return;
     }
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_niamio6', 'template_bevowia', this)
         .then(() => {
             showFeedback('Mensagem enviada com sucesso! Em breve entrarei em contato.');
             form.reset();

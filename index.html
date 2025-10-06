@@ -4,20 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8u7X+6/yS/fVlYw4bK6wFvJ8GqA6+V98Fz7+9T6/E7r8D2j2/f/Vf3j9I2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<title> Portfólio</title>
+
 <nav>
-    <a href="About>" class="active">About</a>
-    <a href="Skills>" class="active">Skills</a>
+    <a href="#hero" class="active"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#sobre" class="active"><i class="fa-solid fa-user"></i> Sobre</a>
+    <a href="#skills" class="active"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+    <a href="#projetos" class="active"><i class="fa-solid fa-rocket"></i> Projetos</a>
+    <a href="#contact" class="active"><i class="fa-solid fa-envelope"></i> Contato</a>
 </nav>
 
 <body>
-    <h1> Hi, i'm Dannylo Stevan Rodrigues Dias </h1>
-    <p id="about"> I have 21 years, study Science of Computer in Newton Paiva and work with helpdesk from Proativa
-        Inteligência em TI.
-        </main>
+
+    <div id="hero">
+        <img src="/Portfolio-AV1/img/perfil.png" alt="Foto de Perfil de Dannylo" class="profile-photo">
+
+        <div class="hero-content">
+            <h1>Dannylo Stevan Rodrigues Dias</h1>
+        </div>
+    </div>
+    <section id="sobre">
+        <h1>Sobre Mim</h1>
+        <div class="sobre-container">
+            <p>Tenho de 21 anos com 3 anos de experiência no ambiente corporativo, atualmente cursando Ciência da Computação.
+            </p>
+            <p> Atuo como Estagiário de Suporte Nível 1, o que me proporciona uma base sólida em resolução de problemas e atendimento. Sou apaixonado por desenvolvimento e estou focado em adquirir as habilidades técnicas e de negócio necessárias para me tornar um desenvolvedor que entrega soluções relevantes e de alto impacto para as necessidades empresariais.</p>
+        </div>
+    </section>
 
     <section id="skills">
         <h1>Skills</h1>
@@ -39,21 +55,19 @@
                     <li>Raciocínio Lógico</li>
                 </ul>
             </div>
+        </div>
     </section>
 
-    <section id="Work's">
-        <h1>Work's</h1>
+    <section id="projetos">
+        <h1>Projetos</h1>
         <div class="works-container">
             <h2> Aplicação Desktop + Integração com Mysql </h2>
-
         </div>
-
     </section>
 
     <section id="contact">
         <h1>Entre em Contato</h1>
         <form id="contact-form">
-
             <label for="user_name">Nome:</label>
             <input type="text" id="user_name" name="user_name" required>
 
@@ -72,9 +86,11 @@
 
         </form>
     </section>
+
     <footer>
         <p>Todos os direitos reservados 2025 © </p>
     </footer>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
